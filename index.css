@@ -11,7 +11,7 @@
 
 
 body {
-    background-color: #FEC814;
+    background-color: #d8d3c7;
 }
 
 .header {
@@ -45,7 +45,7 @@ body {
     justify-content: center;
     min-width: 90%;
     padding: 1rem;
-    background-color: black;
+    background-color: #F55235;
     border: none;
     border-radius: .5rem;
     align-self: center;
@@ -209,13 +209,13 @@ body {
 
 
 .buy-now-wrapper > .button, .buy-package > .button {
-    background-color: #FEC814;
-    border: 2px solid #000;
+    background-color: #F55235;
+    /* border: 2px solid #000; */
 }
 
 .buy-now-wrapper > .button > a,
 .buy-package > .button > a {
-    color: #000;
+    color: #FFF;
     font-weight: bold;
     text-decoration: none !important;
 }
