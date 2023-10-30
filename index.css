@@ -4,6 +4,11 @@
     font-family: Roboto;
 }
 
+* > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 body {
     background-color: #FEC814;
@@ -16,7 +21,7 @@ body {
 
 .banner-wrapper {
     width: 100%;
-    background-color: #171717;
+    background-color: #d8d3c7;
     display: flex;
     justify-content: center;
 }
@@ -50,7 +55,7 @@ body {
 .button > a {
     color: #FFF;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .body {
@@ -70,6 +75,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: .75rem;
+}
+
+.article-reasons, .article-buy-now > p {
+    font-size: 1.2rem;
 }
 
 .bar-images-wrapper {
@@ -97,6 +106,108 @@ body {
     padding: 1rem;
 }
 
+.tiket-container {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #a6a6a6, #f0f0f0);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.ticket-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ticket-header > .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #F55236;
+}
+.ticket-header > .subtitle {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000;
+}
+.ticket-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.tickets-img {
+    width: 200px;
+    height: 200px;
+}
+.ticket-info-container {
+    display: flex;
+    flex-direction: column;
+}
+.ticket-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-text {
+    font-size: .9rem;
+    color: #121212;
+    font-weight: 400;
+    margin-left: .5rem;
+}
+
+.ticket-info > img {
+    width: 1rem;
+    height: 1rem; 
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.price-container > .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #F55236;
+}
+.price-container > .price-info {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #000;
+}
+
+.ticket-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.ticket-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 250px;
+    background-color: #F55236;
+    border-radius: 125px;
+}
+
+.ticket-button > a {
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold !important;
+}
+
+.ticket-button-info {
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #000;
+    margin-top: .25rem;
+}
+
+
 .buy-now-wrapper > .button, .buy-package > .button {
     background-color: #FEC814;
     border: 2px solid #000;
@@ -106,6 +217,7 @@ body {
 .buy-package > .button > a {
     color: #000;
     font-weight: bold;
+    text-decoration: none !important;
 }
 
 
@@ -121,11 +233,17 @@ body {
     margin-bottom: 2rem;
 }
 
+
+.comedian-info > span {
+    font-size: 1.5rem;
+}
+
 .youtube-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 .youtube-wrapper > iframe {
@@ -150,18 +268,9 @@ body {
     flex-direction: column;
     align-items: center;
     align-self: center;
+    width: 100%;
     gap: 2rem;
-}
-
-.buy-package {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.buy-package > img {
-    width: 80%;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .footer {
@@ -172,7 +281,7 @@ body {
 .footer > img {
     width: 30%;
     align-self: center;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .sponsor-wrapper {
@@ -235,7 +344,7 @@ body {
 
     .buy-packages-wrapper {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: unset;
     }
 
@@ -274,7 +383,7 @@ body {
 
     .buy-packages-wrapper {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: unset;
     }
 
@@ -313,7 +422,7 @@ body {
 
     .buy-packages-wrapper {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: unset;
     }
 
