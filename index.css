@@ -9,6 +9,10 @@
     font-weight: bold;
 }
 
+* > a {
+    text-decoration-line: none !important;
+}
+
 
 body {
     background-color: #d8d3c7;
@@ -52,10 +56,10 @@ body {
     cursor: pointer;
 }
 
-.button > a {
+.button > span {
     color: #FFF;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .body {
@@ -192,7 +196,7 @@ body {
     border-radius: 125px;
 }
 
-.ticket-button > a {
+.ticket-button > span {
     font-size: 16px;
     color: #FFF;
     text-decoration: none;
